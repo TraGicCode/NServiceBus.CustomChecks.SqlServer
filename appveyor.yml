@@ -22,7 +22,7 @@ before_build:
   - ps: dotnet restore
 build_script: 
   - dotnet build --no-restore --configuration Release
-  - dotnet pack --no-restore --no-build
+  - dotnet pack --no-restore --no-build --include-source
 artifacts:
   - path: src\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
     name: nupkgs
