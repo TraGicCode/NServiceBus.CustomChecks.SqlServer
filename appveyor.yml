@@ -21,10 +21,10 @@ dotnet_csproj:
 before_build:
   - ps: dotnet restore
 build_script: 
-  - dotnet build --no-restore --configuration Release
-  - ps: dotnet pack --no-restore --no-build --configuration Release --include-source /p:Version=$env:APPVEYOR_BUILD_VERSION
+- ps: dotnet build --no-restore --configuration Release
+- ps: dotnet pack --no-restore --no-build --configuration Release --include-source /p:Version=$env:APPVEYOR_BUILD_VERSION
 artifacts:
-  - path: src\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
+  - path: NServiceBus.CustomChecks.SqlServer\NServiceBus.CustomChecks.SqlServer.Package\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
     name: nupkgs
 deploy:
   - provider: NuGet
