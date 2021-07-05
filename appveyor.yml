@@ -21,10 +21,11 @@ dotnet_csproj:
 before_build:
   - ps: dotnet restore
 build_script: 
-  - dotnet build --no-restore
+  - dotnet build --no-restore --configuration Release
+  - dotnet pack --no-restore --no-build --include-source
 artifacts:
-  - path: NServiceBus.CustomChecks.SqlServer\NServiceBus.CustomChecks.SqlServer.Package\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
-    name: NServiceBus.CustomChecks.SqlServer.nupkg
+  - path: src\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
+    name: nupkgs
 deploy:
   - provider: NuGet
     api_key:

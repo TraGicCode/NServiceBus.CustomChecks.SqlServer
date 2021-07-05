@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>TraGicCode</Title>
+    <PackageProjectUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</RepositoryUrl>
+    <PackageTags>nservicebus customcheck sql</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Description>A Reusable SqlServer NServiceBus CustomCheck to check the availability and connectivity to the database.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NServiceBus.CustomChecks" Version="3.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+</Project>
