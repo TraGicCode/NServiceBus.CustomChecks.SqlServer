@@ -24,7 +24,7 @@ build_script:
 - ps: dotnet build --no-restore --configuration Release
 - ps: dotnet pack --no-restore --no-build --configuration Release --include-source /p:Version=$env:APPVEYOR_BUILD_VERSION
 artifacts:
-  - path: NServiceBus.CustomChecks.SqlServer\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
+  - path: src\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
     name: nupkgs
 deploy:
   - provider: NuGet
