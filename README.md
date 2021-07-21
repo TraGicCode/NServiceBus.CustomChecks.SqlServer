@@ -1,6 +1,6 @@
-﻿# NServiceBus.CustomChecks.SqlServer
+# NServiceBus.CustomChecks.SqlServer
 
-[![Build status](https://ci.appveyor.com/api/projects/status/m9cejtr15ikcmc8u/branch/master?svg=true)](https://ci.appveyor.com/project/TraGicCode/nservicebus-customchecks-sqlserver)
+[![Build status](https://img.shields.io/appveyor/build/TraGicCode/NServiceBus-CustomChecks-SqlServer/master)](https://ci.appveyor.com/project/TraGicCode/NServiceBus-CustomChecks-SqlServer)
 [![Nuget](https://img.shields.io/nuget/v/NServiceBus.CustomChecks.SqlServer/)](https://www.nuget.org/packages/NServiceBus.CustomChecks.SqlServer)
 [![Nuget downloads](https://img.shields.io/nuget/dt/NServiceBus.CustomChecks.SqlServer/)](https://www.nuget.org/packages/NServiceBus.CustomChecks.SqlServer)
 [![License](https://img.shields.io/github/license/TraGicCode/NServiceBus.CustomChecks.SqlServer.svg)](https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer/blob/master/LICENSE)
@@ -14,25 +14,25 @@
 
 ## Description
 
-A Reusable SqlServer NServiceBus CustomCheck to check the availability and connectivity to the database.
+A Reusable NServiceBus CustomCheck to check the availability and connectivity of .
 
 ## How to use it
 
-In order to begin using this custom check simply create a concrete for each SqlServer database you would like to perform a healthcheck on.
+In order to begin using this custom check simply create a child class for each instance you would like to perform a healthcheck on.
 
 ```c#
-    namespace Ordering.Endpoint.CustomChecks
+namespace Ordering.Endpoint.CustomChecks
+{
+    public class OrderingSqlServerCustomCheck : SqlServerCustomCheck
     {
-        public class OrderingSqlServerCustomCheck : SqlServerCustomCheck
-        {
-            private const string ConnectionString =
-                "Data Source=(local);Initial Catalog=Ordering;Integrated Security=True";
+        private const string ConnectionString =
+            "Data Source=(local);Initial Catalog=Ordering;Integrated Security=True";
 
-            public OrderingSqlServerCustomCheck() : base(ConnectionString, TimeSpan.FromSeconds(10))
-            {
-            }
+        public OrderingSqlServerCustomCheck() : base(ConnectionString, TimeSpan.FromSeconds(10))
+        {
         }
     }
+}
 ```
 
 ## Contributing
