@@ -5,7 +5,6 @@
     <Title>NServiceBus.CustomChecks.SqlServer</Title>
     <PackageProjectUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</PackageProjectUrl>
     <RepositoryUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</RepositoryUrl>
-    <PackageTags>nservicebus customcheck healthcheck sql</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Description>A Reusable SqlServer NServiceBus CustomCheck to check the availability and connectivity to the database.</Description>
     <PackageIcon>icon.png</PackageIcon>
