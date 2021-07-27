@@ -1,8 +1,8 @@
 # NServiceBus.CustomChecks.SqlServer
 
 [![Build status](https://img.shields.io/appveyor/build/TraGicCode/NServiceBus-CustomChecks-SqlServer/master)](https://ci.appveyor.com/project/TraGicCode/NServiceBus-CustomChecks-SqlServer)
-[![Nuget](https://img.shields.io/nuget/v/NServiceBus.CustomChecks.SqlServer/)](https://www.nuget.org/packages/NServiceBus.CustomChecks.SqlServer)
-[![Nuget downloads](https://img.shields.io/nuget/dt/NServiceBus.CustomChecks.SqlServer/)](https://www.nuget.org/packages/NServiceBus.CustomChecks.SqlServer)
+[![Nuget](https://img.shields.io/nuget/v/NServiceBus.CustomChecks.SqlServer)](https://www.nuget.org/packages/NServiceBus.CustomChecks.SqlServer)
+[![Nuget downloads](https://img.shields.io/nuget/dt/NServiceBus.CustomChecks.SqlServer)](https://www.nuget.org/packages/NServiceBus.CustomChecks.SqlServer)
 [![License](https://img.shields.io/github/license/TraGicCode/NServiceBus.CustomChecks.SqlServer.svg)](https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer/blob/master/LICENSE)
 
 #### Table of Contents
