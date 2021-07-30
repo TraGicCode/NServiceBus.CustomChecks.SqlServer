@@ -1,4 +1,19 @@
 ---
+README.md:
+  description_suffix: Sql Server
+  usage_code_block: |-
+    namespace Ordering.Endpoint.CustomChecks
+    {
+        public class OrderingSqlServerCustomCheck : SqlServerCustomCheck
+        {
+            private const string ConnectionString =
+                "Data Source=(local);Initial Catalog=Ordering;Integrated Security=True";
+
+            public OrderingSqlServerCustomCheck() : base(ConnectionString, TimeSpan.FromSeconds(10))
+            {
+            }
+        }
+    }
 directory.build.props:
   nuget-package-tags-extras:
     - sql
