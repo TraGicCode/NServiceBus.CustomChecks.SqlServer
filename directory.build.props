@@ -1,5 +1,14 @@
 <Project>
+
+    <!-- Nuget Package Info -->
     <PropertyGroup>
+        <Title>NServiceBus.CustomChecks.SqlServer</Title>
+        <PackageProjectUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</RepositoryUrl>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
         <PackageTags>nservicebus;customcheck;healthcheck;sql</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies> <!-- Ensure nuget dependencies make it to bin directory for il-repack -->
     </PropertyGroup>
+
 </Project>
