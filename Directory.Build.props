@@ -2,7 +2,8 @@
 
     <!-- Nuget Package Info -->
     <PropertyGroup>
-        <Title>NServiceBus.CustomChecks.SqlServer</Title>
+        <PackageId>NServiceBus.CustomChecks.SqlServer</PackageId>
+        <Authors>TraGicCode</Authors>
         <PackageProjectUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</PackageProjectUrl>
         <RepositoryUrl>https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer</RepositoryUrl>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
