@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/tree/0.4.1) (2021-08-18)
+
+[Full Changelog](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/compare/0.3.0...0.4.1)
+
+### Bugs
+
+- Fix Nuget Package Authors Metadata [\#25](https://github.com/TraGicCode/NServiceBus.CustomChecks.SqlServer/pull/25) ([TraGicCode](https://github.com/TraGicCode))
+
 ## [0.3.0](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/tree/0.3.0) (2021-07-27)
 
 [Full Changelog](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/compare/0.2.0...0.3.0)
