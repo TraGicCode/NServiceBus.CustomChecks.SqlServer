@@ -1,8 +1,8 @@
 # Changelog
 
-## [0.4.1](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/tree/0.4.1) (2021-08-18)
+## [0.3.1](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/tree/0.3.1) (2021-08-18)
 
-[Full Changelog](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/compare/0.3.0...0.4.1)
+[Full Changelog](https://github.com/tragiccode/NServiceBus.CustomChecks.SqlServer/compare/0.3.0...0.3.1)
 
 ### Bugs
 
