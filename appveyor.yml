@@ -23,7 +23,7 @@ before_build:
 build_script: 
   - ps: msbuild /property:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
 artifacts:
-  - path: src\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*.nupkg
+  - path: src\NServiceBus.CustomChecks.SqlServer\bin\Release\NServiceBus.CustomChecks.SqlServer.*nupkg
     name: nupkgs
 deploy:
   - provider: NuGet
