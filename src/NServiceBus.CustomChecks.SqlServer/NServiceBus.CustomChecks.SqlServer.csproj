@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.18.2" PrivateAssets="All" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" PrivateAssets="All" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" PrivateAssets="All" />
     <PackageReference Include="NServiceBus.CustomChecks" Version="3.0.1" />
   </ItemGroup>
 
